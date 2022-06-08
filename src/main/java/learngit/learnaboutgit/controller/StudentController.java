@@ -20,7 +20,7 @@ public class StudentController {
     @PostMapping("/save")
     public ResponseEntity<Student> saveStudent(@RequestBody Student student)
     {
-        studentLogger.info(student.toString());
+        studentLogger.info(student.toString()+"I am the second developer who created saved student");
         Student savedStudent =   this.studentService.saveStudent(student);
         return ResponseEntity.ok().body(savedStudent);
     }
