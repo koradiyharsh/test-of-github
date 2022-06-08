@@ -24,4 +24,13 @@ public class StudentController {
         Student savedStudent =   this.studentService.saveStudent(student);
         return ResponseEntity.ok().body(savedStudent);
     }
+
+    @GetMapping("{id}")
+    public ResponseEntity<Student> getStudent(@PathVariable("id") Long id)
+    {
+     Student getStudent   =  this.studentService.getStudentBy(id);
+     studentLogger.info("student fetch by using ID "+id);
+     return ResponseEntity.ok(getStudent);
+
+    }
 }

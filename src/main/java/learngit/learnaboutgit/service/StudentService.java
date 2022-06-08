@@ -15,4 +15,10 @@ public class StudentService {
        Student savedStudent =  this.studentDao.save(student);
        return savedStudent;
     }
+
+
+    public Student getStudentBy(Long id) {
+     return this.studentDao.findById(id).get();
+
+    }
 }

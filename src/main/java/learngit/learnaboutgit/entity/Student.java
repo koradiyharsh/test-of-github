@@ -1,9 +1,13 @@
 package learngit.learnaboutgit.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "student")
+@NoArgsConstructor
 public class Student {
 
     @Id

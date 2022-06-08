@@ -11,4 +11,5 @@ import java.util.Map;
 
 @Repository
 public interface StudentDao extends JpaRepository<Student ,Long> {
+
 }
