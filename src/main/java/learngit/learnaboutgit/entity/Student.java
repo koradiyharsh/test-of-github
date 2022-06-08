@@ -1,7 +1,13 @@
 package learngit.learnaboutgit.entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "student")
 public class Student {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ID;
     private String firstName;
     private String lastName;

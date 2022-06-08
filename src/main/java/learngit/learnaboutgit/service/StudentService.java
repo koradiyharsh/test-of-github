@@ -12,7 +12,7 @@ public class StudentService {
     private StudentDao studentDao;
     public Student saveStudent(Student student)
     {
-       Student savedStudent =   this.studentDao.save(student) ;
+       Student savedStudent =  this.studentDao.save(student);
        return savedStudent;
     }
 }
